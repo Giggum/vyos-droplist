@@ -27,7 +27,8 @@ Configure task scheduler:
 ```
 
 Configure your IPv4/IPv6 firewall rules. I use a zone-based configuration:
-"IPV4"
+
+IPV4
 ```
   set firewall ipv4 name WAN-LOCAL rule 10 source group network-group 'ng-Blocklist'
   set firewall ipv4 name WAN-LOCAL rule 10 action 'drop'
@@ -49,7 +50,8 @@ Configure your IPv4/IPv6 firewall rules. I use a zone-based configuration:
   set firewall ipv4 name LOCAL-WAN rule 10 log
   set firewall ipv4 name LOCAL-WAN rule 10 description 'Drop traffic to DROP/eDROP networks'
 ```
-"IPV6"
+
+IPV6
 ```
   set firewall ipv6 name WAN-LOCAL-6 rule 10 source group network-group 'ng-Blocklist-v6'
   set firewall ipv6 name WAN-LOCAL-6 rule 10 action 'drop'
