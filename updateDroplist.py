@@ -16,8 +16,6 @@
 #
 import argparse
 import logging
-#import subprocess
-#import socket
 import sys
 import urllib.request
 from datetime import datetime
